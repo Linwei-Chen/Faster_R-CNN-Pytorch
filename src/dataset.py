@@ -258,10 +258,10 @@ def detection_collate(batch):
 
 # batch：(imgs:list[tensor img \in(0,1)], targets:list[tensor:[object_num, 5]])
 def get_voc_data_set(percent_coord=False):
-    from src.config import config_parser
+    from config import config_parser
     args = config_parser()
-    from src.augmentations import FasterRCNNAugmentation
-    from src.config import IMAGE_MAX_SIDE, IMAGE_MIN_SIDE, CHANNEL_MEANS
+    from augmentations import FasterRCNNAugmentation
+    from config import IMAGE_MAX_SIDE, IMAGE_MIN_SIDE, CHANNEL_MEANS
     dataset = VOCDetection(root=args.voc_data_set_root,
                            transform=FasterRCNNAugmentation(min_size=IMAGE_MIN_SIDE,
                                                             max_size=IMAGE_MAX_SIDE,
@@ -276,7 +276,7 @@ def get_voc_data_set(percent_coord=False):
 
 
 if __name__ == '__main__':
-    from src.test import draw_box
+    from test import draw_box
 
     # global TEST_MODE
     data_set = get_voc_data_set(True)

@@ -7,10 +7,10 @@ from typing import Tuple, List, Optional, Union
 from torch import nn, Tensor
 from torch.nn import functional as F
 import numpy as np
-from src.region_proposal_network import RegionProposalNetwork
-from src.utils import BBox, beta_smooth_l1_loss, nms
+from region_proposal_network import RegionProposalNetwork
+from utils import BBox, beta_smooth_l1_loss, nms
 import os
-from src.utils import save_safely
+from utils import save_safely
 
 
 class Base(object):
@@ -470,9 +470,9 @@ class FasterRCNN(nn.Module):
              scheduler,
              path_to_checkpoints_dir: str = None) -> str:
 
+        from config import config_parser
+        args = config_parser()
         if path_to_checkpoints_dir is None:
-            from src.config import config_parser
-            args = config_parser()
             path_to_checkpoints_dir = args.save_folder
         path_to_checkpoint = os.path.join(path_to_checkpoints_dir, f'model-{step}.pkl')
         checkpoint = {
@@ -483,8 +483,8 @@ class FasterRCNN(nn.Module):
         }
         dir_path, file_name = os.path.split(path_to_checkpoint)
         # save_safely(file=checkpoint, dir_path=dir_path, file_name=file_name)
-        save_safely(file=checkpoint, dir_path=dir_path, file_name='model.pkl')
-        print('*** save the {step} checkpoint successfully! ')
+        save_safely(file=checkpoint, dir_path=dir_path, file_name=f'{args.base_net}_model.pkl')
+        print(f'*** save the {step} checkpoint successfully! ')
         return path_to_checkpoint
 
     def load(self,
@@ -492,23 +492,28 @@ class FasterRCNN(nn.Module):
              scheduler=None,
              path_to_checkpoint: str = None, ) -> 'Model':
         print('*** loading saved model...')
+        from config import config_parser
+        args = config_parser()
         if path_to_checkpoint is None:
-            from src.config import config_parser
-            path_to_checkpoint = os.path.join(config_parser().save_folder, 'model.pkl')
-        checkpoint = torch.load(path_to_checkpoint, map_location='cpu')
-        self.load_state_dict(checkpoint['state_dict'])
-        step = checkpoint['step']
-        if optimizer is not None:
-            optimizer.load_state_dict(checkpoint['optimizer_state_dict'])
-        if scheduler is not None:
-            scheduler.load_state_dict(checkpoint['scheduler_state_dict'])
-        print('*** loading saved model successfully! ')
-        return step
+            path_to_checkpoint = os.path.join(args.save_folder, f'{args.base_net}_model.pkl')
+        try:
+            checkpoint = torch.load(path_to_checkpoint, map_location='cpu')
+            self.load_state_dict(checkpoint['state_dict'])
+            step = checkpoint['step']
+            if optimizer is not None:
+                optimizer.load_state_dict(checkpoint['optimizer_state_dict'])
+            if scheduler is not None:
+                scheduler.load_state_dict(checkpoint['scheduler_state_dict'])
+            print('*** loading saved model successfully! ')
+            return step
+        except Exception:
+            print('*** loading saved model fail! ')
+            return 0
 
 
 def get_default_model(pre_trained=True):
-    from src.dataset import get_voc_data_set, VOC_CLASSES
-    from src.config import ANCHOR_RATIOS, ANCHOR_SIZES, RPN_PRE_NMS_TOP_N, RPN_POST_NMS_TOP_N, \
+    from dataset import get_voc_data_set, VOC_CLASSES
+    from config import ANCHOR_RATIOS, ANCHOR_SIZES, RPN_PRE_NMS_TOP_N, RPN_POST_NMS_TOP_N, \
         ANCHOR_SMOOTH_L1_LOSS_BETA, PROPOSAL_SMOOTH_L1_LOSS_BETA, config_parser
     args = config_parser()
     base_net = {
@@ -532,10 +537,10 @@ def get_default_model(pre_trained=True):
 
 # test
 if __name__ == '__main__':
-    from src.config import ANCHOR_RATIOS, ANCHOR_SIZES, RPN_PRE_NMS_TOP_N, RPN_POST_NMS_TOP_N, \
+    from config import ANCHOR_RATIOS, ANCHOR_SIZES, RPN_PRE_NMS_TOP_N, RPN_POST_NMS_TOP_N, \
         ANCHOR_SMOOTH_L1_LOSS_BETA, PROPOSAL_SMOOTH_L1_LOSS_BETA, LEARNING_RATE, MOMENTUM, WEIGHT_DECAY
     from torch import optim
-    from src.dataset import get_voc_data_set
+    from dataset import get_voc_data_set
 
     model = get_default_model(True)
     data_set = get_voc_data_set()

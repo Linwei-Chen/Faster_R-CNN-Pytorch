@@ -544,7 +544,7 @@ class FasterRCNNAugmentation(object):
             # 得到框的绝对坐标
             ToAbsoluteCoords(),
             PhotometricDistort(),
-            ExpandTo1000x1000(self.mean),
+            # ExpandTo1000x1000(self.mean),
             RandomMirror(),
             # 相对坐标
             # ToPercentCoords(),

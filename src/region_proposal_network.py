@@ -5,7 +5,7 @@ import torch
 from torch import nn, Tensor
 from torch.nn import functional as F
 
-from src.utils import nms, BBox, beta_smooth_l1_loss
+from utils import nms, BBox, beta_smooth_l1_loss
 
 
 class RegionProposalNetwork(nn.Module):

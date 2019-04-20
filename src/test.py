@@ -79,7 +79,7 @@ def test(img_path):
 
         if detection_bboxes.shape[0] != 0:
             # NMS
-            kept_indices, _ = nms(detection_bboxes, detection_probs, overlap=0.3, top_k=None)
+            kept_indices, _ = nms(detection_bboxes, detection_probs, overlap=0.5, top_k=None)
             detection_bboxes = detection_bboxes[kept_indices]
             detection_classes = detection_classes[kept_indices]
             detection_probs = detection_probs[kept_indices]
@@ -104,6 +104,8 @@ if __name__ == '__main__':
         if test_img_dir == root:
             print(root, dirs, files)
             files = [i for i in files if any([j in i for j in ['jpg', 'png', 'jpeg', 'gif', 'tiff']])]
+            with open(osp.join(test_img_dir, 'tested.txt'), 'a') as txt:
+                pass
             with open(osp.join(test_img_dir, 'tested.txt'), 'r') as txt:
                 txt = txt.readlines()
                 txt = [i.strip() for i in txt]
