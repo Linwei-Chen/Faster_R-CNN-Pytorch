@@ -1,0 +1,57 @@
+Faster R-CNN：
+    features = base_net.forward(img)
+    anchors = generate_anchors(features_size, anchor_sizes, anchor_ratios)
+    rpn_hidden_conv_out = rpn_hidden_conv3x3_layer.forward(features)
+    rpn_cls = rpn_hidden_conv1x1_layer_for_cls(rpn_hidden_conv_out)
+    rpn_reg = rpn_hidden_conv1x1_layer_for_reg(rpn_hidden_conv_out)
+    if training:
+        # 1.rpn part
+        inside_img_anchors_indices = find_anchors_inside_img(img, anchors)
+        inside_img_anchors = anchors[inside_img_anchors_indice]
+        all_positive_anchors_indices, labels = find_positive_anchors(gt_boxes, inside_img_anchors)
+        all_negative_anchors_indices = get_exclude(inside_img_anchors, all_positive_anchors)
+        shuffle(all_positive_anchors_indices)
+        shuffle(all_negative_anchors_indices)
+        train_sample_indices = all_positive_anchors_indices[:up_to_128] + all_negative_anchors_indices[:256 - up_to_128]
+        rpn_cls_samples = rpn_cls[train_sample_indices]
+        gt_labels = labels[train_sample_indices]
+        rpn_reg_samples = rpn_reg[train_sample_indices]
+        gt_reg = calculate_gt_reg(rpn_reg_samples, gt_boxes)
+        rpn_loss = cross_entropy(rpn_cls_samples, gt_labels) + smoothL1(rpn_reg_samples, gt_reg)
+
+        # 2.detection part
+        inside_rpn_positive_probs = rpn_cls[positive_class][inside_img_anchors_indices]
+        inside_rpn_reg = rpn_reg[inside_img_anchors_indices]
+        # non-max-suppression to get proposals
+        sorted_indices = descend_sort(inside_rpn_positive_probs)
+        top_n_probs_indices = sorted_indices[:pre_nms_top_n]
+        top_n_probs = inside_rpn_positive_probs[top_n_probs_indices]
+        top_n_inside_img_anchors = inside_img_anchors[top_n_probs_indices]
+        top_m_anchors_indices = nms(top_n_inside_img_anchors, top_n_probs, threshold, top_m)
+        top_m_anchors = inside_img_anchors[top_m_anchors_indices]
+        top_m_anchors_reg = inside_rpn_reg[top_m_anchors_indices]
+        rpn_proposals = bounding_box_regression(top_m_anchors, top_m_anchors_reg)
+        rpn_proposals_gt_reg, rpn_proposals_gt_label = get_gt(rpn_proposals, gt_labels, get_boxes)
+        rpn_proposals_features = roi(rpn_proposals, features)
+        detection_conv_out = detection_conv3x3_layer(rpn_proposals_features)
+        detection_cls = detection_cls_fc_layer(detection_conv_out)
+        detection_reg = detection_reg_fc_layer(detection_conv_out)
+        detection_loss = cross_entropy(detection_cls, gt_labels) + smoothL1(detection_reg, rpn_proposals_gt_reg)
+
+        loss = rpn_loss + detection_loss
+        return loss
+
+    else if not training:
+        rpn_proposals = bounding_regression(anchors, rpn_reg)
+        rpn_proposals = clip(min=(0,0), max=(img_h,img_w))
+        rpn_probs = softmax(rpn_cls[positive_class])
+        top_n_rpn_proposals, top_n_rpn_probs = choose_top_n(rpn_proposals, rpn_probs)
+        rpn_proposals = nms(top_n_rpn_proposals, top_n_rpn_probs, threshold, top_m)
+        detection_cls, detection_reg = detect_net.forwad(rpn_proposals)
+        detection_probs = softmax(detection_cls)
+        detection_boxes = bounding_regression(rpn_proposals, detection_reg)
+        result_dict = {}
+        for class in classes:
+            result_dict[class] = nms(detection_boxes, detection_probs[class], threshold)
+
+        return result_dict
