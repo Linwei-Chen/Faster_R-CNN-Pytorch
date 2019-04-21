@@ -14,15 +14,15 @@ to train the faster r-cnn on voc2007&2012
 1、setup the base dir of voc dataset in config.py, the dir's structure should be like this:
 
 base_dir
-	VOC2007
-		Annotations
-		ImageSets
-		JPEGImages
-		SegmentationClass
-		SegmentationObject
-	VOC2012
-		Annotations
-		ImageSets
-		JPEGImages
-		SegmentationClass
-		SegmentationObject
+   VOC2007
+      Annotations
+      ImageSets
+      JPEGImages
+      SegmentationClass
+      SegmentationObject
+   VOC2012
+      Annotations
+      ImageSets
+      JPEGImages
+      SegmentationClass
+      SegmentationObject
