@@ -1,4 +1,4 @@
-# Fast_R-CNN
+# Faster_R-CNN
 simple implement of Faster R-CNN with Pytorch
 
 reference: https://github.com/potterhsu/easy-faster-rcnn.pytorch
