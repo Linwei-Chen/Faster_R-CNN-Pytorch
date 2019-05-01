@@ -5,6 +5,7 @@ import time
 from torch import optim
 from model import get_default_model
 
+
 def train():
     from dataset import get_voc_data_set, VOC_CLASSES
     from config import config_parser, ANCHOR_RATIOS, ANCHOR_SIZES, RPN_PRE_NMS_TOP_N, RPN_POST_NMS_TOP_N, \

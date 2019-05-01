@@ -2,96 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bd5b2f25-720f-4fd7-a56d-76dfcfb1b746" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/info_img/model.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/20190415Fast_R-CNN.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/20190415Fast_R-CNN.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_img/000000000785.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_img/000000001584.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_img/000000001761.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_img/000000008690.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_img/000000009769.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_img/000000539962.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_img/000000540280.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_img/000000540414.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_img/000000540466.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_img/000000540502.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_img/000000540928.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_img/000000540932.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_img/000000540962.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_img/000000541055.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_img/000000541123.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_img/000000541291.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_img/000000541634.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_img/000000541664.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_img/000000541773.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_img/000000541952.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_img/000000542073.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_img/000000542089.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_img/000000542127.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_img/000000542423.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_img/000000542625.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_img/000000542776.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_img/000000542856.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_img/000000543043.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_img/000000543047.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_img/000000543300.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_img/000000543528.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_img/result/000000000785.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_img/result/000000001584.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_img/result/000000001761.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_img/result/000000008690.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_img/result/000000009769.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_img/result/000000539962.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_img/result/000000540280.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_img/result/000000540414.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_img/result/000000540466.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_img/result/000000540502.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_img/result/000000540928.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_img/result/000000540932.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_img/result/000000540962.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_img/result/000000541055.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_img/result/000000541123.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_img/result/000000541291.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_img/result/000000541634.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_img/result/000000541664.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_img/result/000000541773.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_img/result/000000541952.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_img/result/000000542073.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_img/result/000000542089.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_img/result/000000542127.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_img/result/000000542423.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_img/result/000000542625.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_img/result/000000542776.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_img/result/000000542856.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_img/result/000000543043.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_img/result/000000543047.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_img/result/000000543300.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_img/result/000000543528.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_img/result/000001.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_img/result/000002.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_img/result/000003.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_img/result/000004.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_img/result/000006.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_img/result/000008.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_img/result/000010.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_img/result/000011.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_img/result/000013.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_img/result/000014.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_img/result/000015.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_img/result/000018.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_img/result/000022.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_img/result/000025.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_img/result/000027.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_img/result/000028.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_img/result/000029.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_img/result/000031.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_img/result/000037.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_img/result/000038.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_img/result/000040.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_img/result/000043.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_img/result/000045.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_img/result/000049.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_img/tested.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/train.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/train.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -104,8 +16,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/model.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-484">
-              <caret line="439" column="12" lean-forward="true" selection-start-line="439" selection-start-column="12" selection-end-line="439" selection-end-column="27" />
+            <state relative-caret-position="922">
+              <caret line="508" column="25" selection-start-line="508" selection-start-column="25" selection-end-line="508" selection-end-column="25" />
               <folding>
                 <element signature="e#0#30#0" expanded="true" />
               </folding>
@@ -116,8 +28,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/lr_scheduler.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="600">
-              <caret line="25" selection-start-line="25" selection-end-line="25" />
+            <state relative-caret-position="45">
+              <caret line="6" column="8" selection-start-line="6" selection-start-column="8" selection-end-line="6" selection-end-column="8" />
               <folding>
                 <element signature="e#0#23#0" expanded="true" />
               </folding>
@@ -126,34 +38,44 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/dataset.py">
+        <entry file="file://$PROJECT_DIR$/src/test.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="274" column="44" selection-start-line="274" selection-start-column="44" selection-end-line="274" selection-end-column="44" />
+            <state relative-caret-position="375">
+              <caret line="36" column="92" selection-start-line="36" selection-start-column="92" selection-end-line="36" selection-end-column="92" />
               <folding>
-                <element signature="e#177#198#0" expanded="true" />
+                <element signature="e#0#9#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/region_proposal_network.py">
+        <entry file="file://$PROJECT_DIR$/src/__init__.py">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/detector.py">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/augmentations.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="474">
-              <caret line="272" column="27" lean-forward="true" selection-start-line="272" selection-start-column="27" selection-end-line="272" selection-end-column="27" />
+            <state relative-caret-position="1905">
+              <caret line="133" column="15" selection-start-line="133" selection-start-column="10" selection-end-line="133" selection-end-column="15" />
               <folding>
-                <element signature="e#0#47#0" expanded="true" />
+                <element signature="e#0#12#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/info_img/model.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="920">
-              <caret line="40" column="40" lean-forward="true" selection-start-line="40" selection-start-column="40" selection-end-line="40" selection-end-column="40" />
+            <state relative-caret-position="600">
+              <caret line="40" column="40" selection-start-line="40" selection-start-column="40" selection-end-line="40" selection-end-column="40" />
             </state>
           </provider>
         </entry>
@@ -161,7 +83,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/utils.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="925">
+            <state relative-caret-position="825">
               <caret line="142" column="38" selection-start-line="142" selection-start-column="38" selection-end-line="142" selection-end-column="38" />
               <folding>
                 <element signature="e#0#47#0" expanded="true" />
@@ -174,43 +96,19 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/JuJu.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="381">
-              <caret line="29" column="13" lean-forward="true" selection-start-line="29" selection-start-column="13" selection-end-line="29" selection-end-column="13" />
+            <state relative-caret-position="435">
+              <caret line="29" column="13" selection-start-line="29" selection-start-column="13" selection-end-line="29" selection-end-column="13" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="97" column="56" selection-start-line="97" selection-start-column="56" selection-end-line="97" selection-end-column="56" />
-              <folding>
-                <element signature="e#0#9#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/train.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="660">
-              <caret line="64" column="26" selection-start-line="64" selection-start-column="26" selection-end-line="64" selection-end-column="26" />
+            <state relative-caret-position="276">
+              <caret line="38" column="58" lean-forward="true" selection-start-line="38" selection-start-column="58" selection-end-line="38" selection-end-column="58" />
               <folding>
                 <element signature="e#0#67#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/config.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-215">
-              <caret line="19" column="28" selection-start-line="19" selection-start-column="28" selection-end-line="19" selection-end-column="28" />
-              <folding>
-                <element signature="e#0#15#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -262,12 +160,14 @@
         <option value="$PROJECT_DIR$/src/augmentations.py" />
         <option value="$PROJECT_DIR$/src/dataset.py" />
         <option value="$PROJECT_DIR$/src/config.py" />
-        <option value="$PROJECT_DIR$/src/train.py" />
         <option value="$PROJECT_DIR$/src/utils.py" />
-        <option value="$PROJECT_DIR$/src/model.py" />
         <option value="$PROJECT_DIR$/src/test.py" />
         <option value="$APPLICATION_CONFIG_DIR$/scratches/JuJu.py" />
         <option value="$APPLICATION_CONFIG_DIR$/scratches/Log at 2019-03-31 10:41:14 Sun Mar/model.txt" />
+        <option value="$APPLICATION_CONFIG_DIR$/scratches/DenseNet.py" />
+        <option value="$APPLICATION_CONFIG_DIR$/scratches/DenseNet_efficient.py" />
+        <option value="$PROJECT_DIR$/src/model.py" />
+        <option value="$PROJECT_DIR$/src/train.py" />
       </list>
     </option>
   </component>
@@ -293,23 +193,7 @@
             <path>
               <item name="20190415Fast_R-CNN" type="b2602c69:ProjectViewProjectNode" />
               <item name="20190415Fast_R-CNN" type="462c0819:PsiDirectoryNode" />
-              <item name="info_img" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="20190415Fast_R-CNN" type="b2602c69:ProjectViewProjectNode" />
-              <item name="20190415Fast_R-CNN" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="20190415Fast_R-CNN" type="b2602c69:ProjectViewProjectNode" />
-              <item name="20190415Fast_R-CNN" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="saved_model" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="20190415Fast_R-CNN" type="b2602c69:ProjectViewProjectNode" />
-              <item name="20190415Fast_R-CNN" type="462c0819:PsiDirectoryNode" />
-              <item name="test_img" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="20190415Fast_R-CNN" type="b2602c69:ProjectViewProjectNode" />
@@ -513,13 +397,14 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="47" y="22" width="1873" height="1178" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16684665" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.28821364" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.28821364" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39963168" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -538,9 +423,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="。。。" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/__init__.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/cv2_test.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
@@ -565,26 +447,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/augmentations.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3639">
-          <caret line="133" column="15" selection-start-line="133" selection-start-column="10" selection-end-line="133" selection-end-column="15" />
-          <folding>
-            <element signature="e#0#12#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="97" column="56" selection-start-line="97" selection-start-column="56" selection-end-line="97" selection-end-column="56" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/config.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-215">
@@ -595,47 +457,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/train.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="660">
-          <caret line="64" column="26" selection-start-line="64" selection-start-column="26" selection-end-line="64" selection-end-column="26" />
-          <folding>
-            <element signature="e#0#67#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/utils.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="925">
-          <caret line="142" column="38" selection-start-line="142" selection-start-column="38" selection-end-line="142" selection-end-column="38" />
-          <folding>
-            <element signature="e#0#47#0" expanded="true" />
-            <element signature="e#1508#5740#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/lr_scheduler.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="600">
-          <caret line="25" selection-start-line="25" selection-end-line="25" />
-          <folding>
-            <element signature="e#0#23#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/JuJu.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="381">
-          <caret line="29" column="13" lean-forward="true" selection-start-line="29" selection-start-column="13" selection-end-line="29" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/dataset.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
+        <state relative-caret-position="4035">
           <caret line="274" column="44" selection-start-line="274" selection-start-column="44" selection-end-line="274" selection-end-column="44" />
           <folding>
             <element signature="e#177#198#0" expanded="true" />
@@ -645,28 +469,109 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/region_proposal_network.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="474">
-          <caret line="272" column="27" lean-forward="true" selection-start-line="272" selection-start-column="27" selection-end-line="272" selection-end-column="27" />
+        <state relative-caret-position="3975">
+          <caret line="272" column="27" selection-start-line="272" selection-start-column="27" selection-end-line="272" selection-end-column="27" />
           <folding>
             <element signature="e#0#47#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/model.py">
+    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/DenseNet_efficient.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-484">
-          <caret line="439" column="12" lean-forward="true" selection-start-line="439" selection-start-column="12" selection-end-line="439" selection-end-column="27" />
+        <state relative-caret-position="-201">
+          <caret line="6" column="29" lean-forward="true" selection-start-line="6" selection-start-column="29" selection-end-line="6" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/DenseNet.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="520">
+          <caret line="70" column="35" selection-start-line="70" selection-start-column="35" selection-end-line="70" selection-end-column="35" />
           <folding>
-            <element signature="e#0#30#0" expanded="true" />
+            <element signature="e#1#10#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/lr_scheduler.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="6" column="8" selection-start-line="6" selection-start-column="8" selection-end-line="6" selection-end-column="8" />
+          <folding>
+            <element signature="e#0#23#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="36" column="92" selection-start-line="36" selection-start-column="92" selection-end-line="36" selection-end-column="92" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/detector.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/augmentations.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1905">
+          <caret line="133" column="15" selection-start-line="133" selection-start-column="10" selection-end-line="133" selection-end-column="15" />
+          <folding>
+            <element signature="e#0#12#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/info_img/model.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="920">
-          <caret line="40" column="40" lean-forward="true" selection-start-line="40" selection-start-column="40" selection-end-line="40" selection-end-column="40" />
+        <state relative-caret-position="600">
+          <caret line="40" column="40" selection-start-line="40" selection-start-column="40" selection-end-line="40" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/utils.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="825">
+          <caret line="142" column="38" selection-start-line="142" selection-start-column="38" selection-end-line="142" selection-end-column="38" />
+          <folding>
+            <element signature="e#0#47#0" expanded="true" />
+            <element signature="e#1508#5740#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/JuJu.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="29" column="13" selection-start-line="29" selection-start-column="13" selection-end-line="29" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="922">
+          <caret line="508" column="25" selection-start-line="508" selection-start-column="25" selection-end-line="508" selection-end-column="25" />
+          <folding>
+            <element signature="e#0#30#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/train.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="276">
+          <caret line="38" column="58" lean-forward="true" selection-start-line="38" selection-start-column="58" selection-end-line="38" selection-end-column="58" />
+          <folding>
+            <element signature="e#0#67#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
