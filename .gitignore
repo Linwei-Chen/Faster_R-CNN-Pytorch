@@ -1,2 +1,4 @@
 /__pycache__
 /.DS*
+resnet50_model.pkl
+resnet101_model.pkl
