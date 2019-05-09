@@ -7,6 +7,10 @@ check the link bellow to get the details:
 
 https://zhuanlan.zhihu.com/p/62401362
 
+check this link to download half-trained model: 
+
+https://pan.baidu.com/s/1wUdMdif-vFIihKYRp4R-KQ
+
 # Usage
 
 to train the faster r-cnn on voc2007&2012
@@ -28,7 +32,7 @@ base_dir
 		JPEGImages
 		SegmentationClass
 		SegmentationObject
-```
+ ```
 
 2、train the faster r-cnn use different backbone network by：
 ```
